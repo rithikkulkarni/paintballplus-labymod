@@ -1,0 +1,43 @@
+﻿# Gradle
+.gradle/
+**/build/
+out/
+
+# LabyGradle generated/dev files
+/game-runner/
+/net/
+/bin/
+/assets/
+/src/
+**/.assetsroot
+
+# Local run/game data
+run/
+
+# Local jars / manual dependencies
+libs/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/settings.json
+
+# Java build artifacts
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
