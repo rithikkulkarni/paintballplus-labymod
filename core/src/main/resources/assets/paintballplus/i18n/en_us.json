@@ -4,6 +4,9 @@
       "enabled": {
         "name": "Enabled"
       },
+      "blockF5": {
+        "name": "Block F5 / Third-Person View"
+      },
       "showTabIndicator": {
         "name": "Paintball+ Tab Indicator"
       }

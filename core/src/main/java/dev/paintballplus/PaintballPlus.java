@@ -14,6 +14,8 @@ public class PaintballPlus extends LabyAddon<PaintballPlusConfig> {
 
     @Override
     protected void enable() {
+        this.registerSettingCategory();
+
         PerspectiveBlocker.initialize(this);
 
         this.modIndicator = new ModIndicator();
