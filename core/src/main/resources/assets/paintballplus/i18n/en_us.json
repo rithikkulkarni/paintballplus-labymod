@@ -3,6 +3,9 @@
     "settings": {
       "enabled": {
         "name": "Enabled"
+      },
+      "showTabIndicator": {
+        "name": "Paintball+ Tab Indicator"
       }
     }
   }
