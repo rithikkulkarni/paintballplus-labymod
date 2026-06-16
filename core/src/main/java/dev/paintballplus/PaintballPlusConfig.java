@@ -8,8 +8,10 @@ import net.labymod.api.configuration.loader.property.ConfigProperty;
 @ConfigName("settings")
 public class PaintballPlusConfig extends AddonConfig {
 
-    @SwitchSetting
     private final ConfigProperty<Boolean> enabled = new ConfigProperty<>(true);
+
+    @SwitchSetting
+    private final ConfigProperty<Boolean> blockF5 = new ConfigProperty<>(true);
 
     @SwitchSetting
     private final ConfigProperty<Boolean> showTabIndicator = new ConfigProperty<>(true);
@@ -17,6 +19,10 @@ public class PaintballPlusConfig extends AddonConfig {
     @Override
     public ConfigProperty<Boolean> enabled() {
         return this.enabled;
+    }
+
+    public ConfigProperty<Boolean> blockF5() {
+        return this.blockF5;
     }
 
     public ConfigProperty<Boolean> showTabIndicator() {

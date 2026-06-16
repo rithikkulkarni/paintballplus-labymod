@@ -21,27 +21,27 @@ public class F5BlockListener {
     @Subscribe
     public void onGameTick(GameTickEvent event) {
         if (event.phase() != Phase.PRE) return;
-        if (!this.addon.configuration().enabled().get()) return;
+        if (!this.addon.configuration().blockF5().get()) return;
         PerspectiveBlocker.block();
     }
 
     @Subscribe
     public void onGameRender(GameRenderEvent event) {
         if (event.phase() != Phase.PRE) return;
-        if (!this.addon.configuration().enabled().get()) return;
+        if (!this.addon.configuration().blockF5().get()) return;
         PerspectiveBlocker.block();
     }
 
     @Subscribe
     public void onCameraSetup(CameraSetupEvent event) {
         if (event.phase() != Phase.PRE) return;
-        if (!this.addon.configuration().enabled().get()) return;
+        if (!this.addon.configuration().blockF5().get()) return;
         PerspectiveBlocker.block();
     }
 
     @Subscribe
     public void onKeyPress(KeyEvent event) {
-        if (!this.addon.configuration().enabled().get()) return;
+        if (!this.addon.configuration().blockF5().get()) return;
         if (!PerspectiveBlocker.isGameplayInputActive()) return;
 
         boolean consumedPerspectiveToggle = event.state() == KeyEvent.State.PRESS && PerspectiveBlocker.consumePerspectiveTogglePresses();
